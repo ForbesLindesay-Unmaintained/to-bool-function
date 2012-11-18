@@ -1,0 +1,21 @@
+{
+  "name": "to-bool-function",
+  "version": "0.0.0",
+  "description": "Convert things to functions for use in some/filter/every etc.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "component-install",
+    "test": "component-build -s boolToFunction && mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ForbesLindesay/to-bool-function.git"
+  },
+  "author": "ForbesLindesay",
+  "license": "MIT",
+  "devDependencies": {
+    "component": "*",
+    "mocha": "*",
+    "better-assert": "*"
+  }
+}
