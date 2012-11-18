@@ -1,3 +1,4 @@
+[![Build Status](https://secure.travis-ci.org/ForbesLindesay/to-bool-function.png?branch=master)](https://travis-ci.org/ForbesLindesay/to-bool-function)
 
 # to-bool-function
 
