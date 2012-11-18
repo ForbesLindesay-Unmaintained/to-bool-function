@@ -39,3 +39,4 @@ fun({contact: {realName: /\w+/,    email: /^\S+@\S+\.\S+$/}})
 ## License
 
   MIT
+
