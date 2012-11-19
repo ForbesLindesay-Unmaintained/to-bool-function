@@ -2,7 +2,7 @@
   "name": "to-bool-function",
   "repo": "ForbesLindesay/to-bool-function",
   "description": "Convert things to functions for use in some/filter/every etc.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "keywords": [],
   "dependencies": {
     "component/to-function": "*",
