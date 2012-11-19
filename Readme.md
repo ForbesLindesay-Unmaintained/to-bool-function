@@ -8,6 +8,10 @@
 
     $ component install ForbesLindesay/to-bool-function
 
+  or
+
+    $ npm install to-bool-function
+
 ## API
 
 ```javascript

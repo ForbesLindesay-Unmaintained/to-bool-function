@@ -2,10 +2,10 @@
   "name": "to-bool-function",
   "version": "1.0.0",
   "description": "Convert things to functions for use in some/filter/every etc.",
-  "main": "index.js",
+  "main": "./build/build.js",
   "scripts": {
-    "postinstall": "component-install",
-    "test": "component-build -s boolToFunction && mocha -R spec"
+    "prepublish": "component-install && component-build -s b",
+    "test": "component-install && component-build -s b && mocha -R spec"
   },
   "repository": {
     "type": "git",
