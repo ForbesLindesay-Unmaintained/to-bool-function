@@ -1,6 +1,6 @@
 {
   "name": "to-bool-function",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert things to functions for use in some/filter/every etc.",
   "main": "./build/build.js",
   "scripts": {
