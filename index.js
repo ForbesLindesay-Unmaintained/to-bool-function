@@ -21,17 +21,21 @@ function toBoolFunction(selector, condition) {
     condition = selector;
   }
   var alternate = false;
-  switch (type(condition)) {
-    case 'regexp':
-      alternate = regexpToFunction(condition);
-      break;
-    case 'string':
-    case 'function':
-      alternate = toFunction(condition);
-      break;
-    case 'object':
-      alternate = objectToFunction(condition);
-      break;
+  try {
+    switch (type(condition)) {
+      case 'regexp':
+        alternate = regexpToFunction(condition);
+        break;
+      case 'string':
+      case 'function':
+        alternate = toFunction(condition);
+        break;
+      case 'object':
+        alternate = objectToFunction(condition);
+        break;
+    }
+  } catch (ex) {
+    //ignore things that aren't valid functions
   }
   return function (val) {
     return (val === condition) ||
