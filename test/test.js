@@ -17,3 +17,7 @@ it('should match readme', function () {
   assert(fun({contact: {realName: /\w+/,    email: /^\S+@\S+\.\S+$/}})
             ({contact: {realName: 'Forbes', email: 'forbes@component.io'}}))
 });
+
+it('works with strings that aren\'t valid functions', function () {
+  assert(fun('')(''));
+});
