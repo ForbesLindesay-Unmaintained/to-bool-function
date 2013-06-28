@@ -1,6 +1,6 @@
 {
   "name": "to-bool-function",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Convert things to functions for use in some/filter/every etc.",
   "scripts": {
     "test": "mocha -R spec"
