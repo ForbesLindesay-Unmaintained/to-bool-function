@@ -1,4 +1,4 @@
-var fun = require('../build/build.js');
+var fun = require('../');
 var assert = require('better-assert');
 
 it('should match readme', function () {

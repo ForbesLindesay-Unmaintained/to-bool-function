@@ -1,5 +1,4 @@
-var toFunction = require('to-function');
-var type = require('type');
+var type = require('type-of');
 
 module.exports = toBoolFunction;
 
@@ -12,7 +11,7 @@ module.exports = toBoolFunction;
  */
 function toBoolFunction(selector, condition) {
   if (arguments.length == 2) {
-    selector = toFunction(selector);
+    selector = toBoolFunction(selector);
     condition = toBoolFunction(condition);
     return function () {
       return condition(selector.apply(this, arguments));
@@ -27,8 +26,10 @@ function toBoolFunction(selector, condition) {
         alternate = regexpToFunction(condition);
         break;
       case 'string':
+        alternate = stringToFunction(condition);
+        break;
       case 'function':
-        alternate = toFunction(condition);
+        alternate = condition;
         break;
       case 'object':
         alternate = objectToFunction(condition);
@@ -74,4 +75,21 @@ function objectToFunction(obj) {
     }
     return true;
   }
+}
+
+/**
+ * Convert property `str` to a function.
+ *
+ * @param {String} str
+ * @return {Function}
+ * @api private
+ */
+
+function stringToFunction(str) {
+  // immediate such as "> 20"
+  if (/^ *\W+/.test(str)) return new Function('_', 'return _ ' + str);
+
+  // properties such as "name.first" or "age > 18"
+  var fn = new Function('_', 'return _.' + str);
+  return fn
 }
