@@ -3,8 +3,8 @@
   Convert things to functions for use in some/filter/every etc.
 
 [![Build Status](https://secure.travis-ci.org/ForbesLindesay/to-bool-function.png?branch=master)](https://travis-ci.org/ForbesLindesay/to-bool-function)
-[![Dependency Status](https://gemnasium.com/ForbesLindesay/to-bool-function.png)](https://gemnasium.com/ForbesLindesay/to-bool-function)
-[![NPM version](https://badge.fury.io/js/to-bool-function.png)](http://badge.fury.io/js/to-bool-function)
+[![Dependency Status](https://david-dm.org/ForbesLindesay/to-bool-function.png)](https://gemnasium.com/ForbesLindesay/to-bool-function)
+[![NPM version](https://img.shields.io/npm/v/to-bool-function.svg)](https://www.npmjs.com/package/to-bool-function)
 
 ## Installation
 
