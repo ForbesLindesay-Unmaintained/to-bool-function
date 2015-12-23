@@ -3,7 +3,7 @@
   Convert things to functions for use in some/filter/every etc.
 
 [![Build Status](https://secure.travis-ci.org/ForbesLindesay/to-bool-function.png?branch=master)](https://travis-ci.org/ForbesLindesay/to-bool-function)
-[![Dependency Status](https://david-dm.org/ForbesLindesay/to-bool-function.png)](https://david-dm.org/ForbesLindesay/to-bool-function)
+[![Dependency Status](https://img.shields.io/david/ForbesLindesay/to-bool-function.svg)](https://david-dm.org/ForbesLindesay/to-bool-function)
 [![NPM version](https://img.shields.io/npm/v/to-bool-function.svg)](https://www.npmjs.com/package/to-bool-function)
 
 ## Installation
