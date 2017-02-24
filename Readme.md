@@ -1,5 +1,7 @@
 # to-bool-function
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ForbesLindesay/to-bool-function.svg)](https://greenkeeper.io/)
+
   Convert things to functions for use in some/filter/every etc.
 
 [![Build Status](https://secure.travis-ci.org/ForbesLindesay/to-bool-function.png?branch=master)](https://travis-ci.org/ForbesLindesay/to-bool-function)
